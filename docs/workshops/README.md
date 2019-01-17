@@ -20,7 +20,7 @@ npm i -g yarn
 ## Install
 
 All exercises are listed in `packages` folder grouped by difficulty.
-With the help of `yarn` workspace feature, all dependencies for all exercises will be downloaded once.
+With the help of `yarn` workspaces feature, all dependencies for all exercises will be downloaded once.
 
 Just run:
 
