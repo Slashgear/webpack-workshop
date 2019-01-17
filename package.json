@@ -1,0 +1,16 @@
+{
+  "name": "webpack-workshop",
+  "version": "1.0.0",
+  "description": "Workshop about webpack",
+  "main": "index.js",
+  "author": "Antoine Caron <antoine.caron@zenika.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "0.14.8"
+  }
+}
