@@ -1,3 +1,5 @@
+const { getColor } = require("./color");
+
 let changeCount = 0;
 
 setInterval(() => {
