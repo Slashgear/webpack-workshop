@@ -36,6 +36,70 @@ It's a NodeJS package made for Web developer to do the packaging.
 
 ### Step 1: Setup simple configuration
 
+Webpack configuration is a CommonJS module with default name `webpack.config.js`.
+Coupled with `webpack-cli` dev dependency, you can easily trigger a webpack _build_ on this small app.
+This is where all the webpack configuration will be defined
+
+```js
+const path = require("path");
+
+module.exports = {
+  entry: "./src/title.js", // The source module of our dependency graph
+  output: {
+    // Configuration of what we tell webpack to generate (here, a ./dist/main.js file)
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist")
+  }
+};
+```
+
 ### Step 2: Change index.html script target
 
+Our `index.html` file won't use our modules directly now. It will use directly webpack _output_.
+To do so, just change the `<script/>`
+
+```html{10}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple JS file</title>
+    <meta name="description" content="Simple JS file" />
+  </head>
+  <body>
+    <h1>This title will change !</h1>
+    <script src="dist/main.js"></script>
+  </body>
+</html>
+```
+
 ### Step 3: Script the build with webpack-cli
+
+For the scripting part, we just have to add a `scripts` part in `package.json` file.
+
+```json{13,14,15}
+{
+  "name": "@novice/basic",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}
+```
+
+Now run and open it on your browser:
+
+```bash
+yarn build
+```
+
+Look at the generated _bundle_
