@@ -15,7 +15,8 @@ module.exports = {
         children: [
           "/workshops/basics",
           "/workshops/static-assets",
-          "/workshops/code-assets"
+          "/workshops/code-assets",
+          "/workshops/outputs"
         ]
       }
     ]
