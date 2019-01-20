@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: /webpack.png
 actionText: Get Started →
 actionLink: /workshops/
 features:
