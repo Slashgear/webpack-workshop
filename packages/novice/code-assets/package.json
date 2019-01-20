@@ -1,0 +1,19 @@
+{
+  "name": "@novice/code-assets",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "file-loader": "^3.0.1",
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}

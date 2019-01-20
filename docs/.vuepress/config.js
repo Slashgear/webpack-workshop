@@ -12,7 +12,11 @@ module.exports = {
       "/",
       {
         title: "Novice",
-        children: ["/workshops/basics", "/workshops/static-assets"]
+        children: [
+          "/workshops/basics",
+          "/workshops/static-assets",
+          "/workshops/code-assets"
+        ]
       }
     ]
   }
