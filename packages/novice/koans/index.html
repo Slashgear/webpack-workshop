@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple JS file</title>
+    <meta name="description" content="Simple JS file" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+    />
+    <script
+      type="application/javascript"
+      src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"
+    ></script>
+    <style>
+      body {
+        height: 100vh;
+        transition: background-color 400ms ease-in-out;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons flex">
+      <a class="button is-primary center">Click Me !</a>
+      <a class="button is-info center">Oh No! Click Me !</a>
+    </div>
+    <script>
+      function randomColor() {
+        const colors = [
+          "tomato",
+          "salmon",
+          "plum",
+          "olive",
+          "lime",
+          "chocolate"
+        ];
+        return _.sample(colors);
+      }
+    </script>
+    <script type="application/javascript">
+      function primaryClick() {
+        alert("Oh yes you clicked !");
+      }
+    </script>
+    <script type="application/javascript">
+      function infoClick() {
+        document.body.style.backgroundColor = randomColor();
+      }
+    </script>
+    <script type="application/javascript">
+      document.querySelector(".is-primary").onclick = primaryClick;
+      document.querySelector(".is-info").onclick = infoClick;
+    </script>
+  </body>
+</html>

@@ -16,7 +16,8 @@ module.exports = {
           "/workshops/basics",
           "/workshops/static-assets",
           "/workshops/code-assets",
-          "/workshops/outputs"
+          "/workshops/outputs",
+          "/workshops/novice-koans"
         ]
       }
     ]
