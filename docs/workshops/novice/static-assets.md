@@ -1,7 +1,7 @@
 # Handling static assets
 
 > To start this exercise, be sure to be in `./packages/novice/static-assets` folder.
-> Be sure you have [installed this repository first](./README.md#install)
+> Be sure you have [installed this repository first](../README.md#install)
 
 ## Introduction
 
@@ -10,7 +10,7 @@ we clearly want to be able to use other files types that a webapp needs.
 
 Let's start simply with a static file like an image
 
-<img src="./img/elias-arnar-1309173-unsplash.jpg" width="300px" height="auto" alt="example of asset"/>
+<img src="../img/elias-arnar-1309173-unsplash.jpg" width="300px" height="auto" alt="example of asset"/>
 
 We will start with the same app that is the [basic example](./basics.md).
 But this time we will try to add a picture after the title.

@@ -9,15 +9,16 @@ module.exports = {
       { text: "Workshops", link: "/workshops/" }
     ],
     sidebar: [
-      "/",
+      "/workshops/",
       {
         title: "Novice",
+        collapsable: false,
         children: [
-          "/workshops/basics",
-          "/workshops/static-assets",
-          "/workshops/code-assets",
-          "/workshops/outputs",
-          "/workshops/novice-koans"
+          "/workshops/novice/basics",
+          "/workshops/novice/static-assets",
+          "/workshops/novice/code-assets",
+          "/workshops/novice/outputs",
+          "/workshops/novice/novice-koans"
         ]
       }
     ]
