@@ -1,4 +1,4 @@
-# Handling "code" assets
+# Handling :nail_care: assets
 
 > To start this exercise, be sure to be in `./packages/novice/code-assets` folder.
 > Be sure you have [installed this repository first](../README.md#install)
