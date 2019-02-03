@@ -4,6 +4,10 @@ module.exports = {
   base: "/webpack-workshop/",
   serviceWorker: true,
   themeConfig: {
+    algolia: {
+      apiKey: "5f0c4bd6212a8fc141c63283636d5228",
+      indexName: "webpack_workshop"
+    },
     nav: [
       { text: "Home", link: "/" },
       { text: "Workshops", link: "/workshops/" }
