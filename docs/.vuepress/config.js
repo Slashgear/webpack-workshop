@@ -15,6 +15,9 @@ module.exports = {
       apiKey: "5f0c4bd6212a8fc141c63283636d5228",
       indexName: "webpack_workshop"
     },
+    serviceWorker: {
+      updatePopup: true
+    },
     nav: [
       { text: "Home", link: "/" },
       { text: "Workshops", link: "/workshops/" }
