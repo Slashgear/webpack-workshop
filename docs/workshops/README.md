@@ -28,3 +28,12 @@ Just run:
 ```bash
 yarn install
 ```
+
+## Where to start ?
+
+It depends on your `webpack` skills.
+
+If webpack is a very new concept/tool for you, you should start with [novice first step :baby:](novice/basics.md).
+If never took time to start using webpack from scratch, you should start with [novice koâns :pushpin:](novice/novice-koans.md). If it is too hard for you _Novice_ steps are here for you.
+
+If you think you are mastering webpack novice concepts, you can start directly with the [first intermeditade step](intermediate/dev.md).

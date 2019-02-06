@@ -4,6 +4,13 @@ module.exports = {
   base: "/webpack-workshop/",
   serviceWorker: true,
   themeConfig: {
+    lastUpdated: "Last Updated",
+    repo: "Slashgear/webpack-workshop",
+    repoLabel: "Contribute!",
+    docsRepo: "Slashgear/webpack-workshop",
+    docsDir: "docs",
+    editLinks: true,
+    editLinkText: "Help us improve this page!",
     algolia: {
       apiKey: "5f0c4bd6212a8fc141c63283636d5228",
       indexName: "webpack_workshop"
@@ -30,7 +37,9 @@ module.exports = {
         collapsable: false,
         children: [
           "/workshops/intermediate/dev",
-          "/workshops/intermediate/babel"
+          "/workshops/intermediate/babel",
+          "/workshops/intermediate/style",
+          "/workshops/intermediate/intermediate-koans"
         ]
       }
     ]
