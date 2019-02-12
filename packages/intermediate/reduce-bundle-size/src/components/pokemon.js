@@ -1,3 +1,5 @@
+import _ from "lodash";
+
 export default {
   name: "Pokemon",
   template: `
@@ -5,7 +7,7 @@ export default {
             <div class="card card-content">
                 <div>
                     <img :src="url">
-                    <p>{{name}}</p>
+                    <p>{{formatName}}</p>
                 </div>
             </div>
         </router-link>
@@ -19,6 +21,9 @@ export default {
     },
     to() {
       return `/details/${this.id}`;
+    },
+    formatName() {
+      return _.capitalize(this.name);
     }
   }
 };

@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/main.js", // The source module of our dependency graph
@@ -14,7 +15,19 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.sass$/,
+        test: /\.jpg$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "assets",
+              publicPath: "assets"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(sass|css)$/,
         use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
@@ -25,6 +38,7 @@ module.exports = {
     }
   },
   plugins: [
+    new CleanWebpackPlugin("dist"),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     })
