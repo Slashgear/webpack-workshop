@@ -77,7 +77,7 @@ getPokemons().then(response => {
 </details>
 
 ::: warning
-Did you see the `node-sass` dev dependency is mandatory.
+Did you see the `node-sass` dev dependency is mandatory for "sass-loader". You can see it in the `package.json`.
 :::
 
 ## Extracting your CSS in specific bundles
