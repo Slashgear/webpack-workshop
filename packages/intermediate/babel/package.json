@@ -21,6 +21,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server"
   }
 }
