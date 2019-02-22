@@ -38,7 +38,7 @@ Let's try to fix that ! :wink:
 
 ## Analysing bundle size and content
 
-First thing first, let's try to focus on what is in our bundle and you it is too fat.
+First thing, let's try to focus on what is in our bundle and you will see it is too fat.
 
 We will use [Webpack Bundle Analyser](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 
