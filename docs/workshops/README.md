@@ -23,6 +23,12 @@ npm i -g yarn
 All exercises are listed in `packages` folder grouped by difficulty.
 With the help of `yarn` workspaces feature, all dependencies for all exercises will be downloaded once.
 
+Clone the repository:
+
+```bash
+git clone git@github.com:Slashgear/webpack-workshop.git
+```
+
 Just run:
 
 ```bash
