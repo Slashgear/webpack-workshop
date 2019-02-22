@@ -1,4 +1,3 @@
-import "bulma/bulma.sass";
 import PokemonComponent from "./pokemon.component";
 import { getPokemons } from "./pokemon.service";
 
