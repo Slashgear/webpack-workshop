@@ -82,7 +82,7 @@ Did you see the `node-sass` dev dependency is mandatory.
 
 ## Extracting your CSS in specific bundles
 
-Having your CSS in your bundle is a quick win, but it will may transform your bundle into huge files containing all your CSS stuff you don't need to have to render your website.
+Having your CSS in your bundle is a quick win, but it may transform your bundle into huge files containing all your CSS stuff you don't need to have to render your website.
 You will probably want to split your style out of the JS bundle and extract it in `css` bundles.
 
 Try to configure [Mini CSS Extract Plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
