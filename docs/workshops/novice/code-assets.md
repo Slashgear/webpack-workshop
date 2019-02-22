@@ -60,6 +60,21 @@ module.exports = {
 };
 ```
 
+```js{2}
+const { getRandomColor } = require("./color.js");
+require("../assets/main.css");
+
+let changeCount = 0;
+
+const el = document.querySelector("h1");
+
+setInterval(() => {
+  changeCount++;
+  el.innerHTML = `This title will change ! ${changeCount}`;
+  el.style.color = getRandomColor();
+}, 1000);
+```
+
 :::tip
 You should look at the generated bundle. There is no generated CSS file. The CSS should be in the JS bundle.
 :::
