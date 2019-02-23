@@ -105,28 +105,6 @@ import _capitalize from "lodash/capitalize";
 For lodash you could also use [babel plugin lodash](https://github.com/lodash/babel-plugin-lodash) if your are using babel in your app.
 :::
 
-We only cut the trees we don't grew directly, this was our dependencies.
-Let's focus on app code, if you look at `pokemon.service.js` you will see that a method is not use in our application.
-Webpack can detect it and removes it from the bundle.
-
-::: warning
-Webpack is not automagically tree shaking dead code. :sob:
-:::
-
-To do so, we have to tell Webpack:
-
-> "ok my code is safe, it does not contain modules creating side effects on the app you could try to optimize it" - You
-
-Just try to add `"sideEffects": false` in your package.json file.
-Webpack will load this configuration and will optimize bundles to eliminate dead code.
-
-Your app should be broken by now, all the CSS should be missing.
-CSS module are by nature creating side-effects.
-
-Let's try with `"sideEffects": ["*.sass"]` :tada:!
-
-You can verify, no lodash in your bundle at all !
-
 ## Code splitting
 
 Now the app is loading only the dependencies we need.
