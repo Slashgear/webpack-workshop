@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
   mode: "production",
@@ -16,6 +17,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
+      },
+      {
         test: /\.jpg$/,
         use: [
           {
@@ -30,15 +36,15 @@ module.exports = {
       {
         test: /\.(sass|css)$/,
         use: ["style-loader", "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.vue$/,
+        use: "vue-loader"
       }
     ]
   },
-  resolve: {
-    alias: {
-      vue: "vue/dist/vue.js"
-    }
-  },
   plugins: [
+    new VueLoaderPlugin(),
     new CleanWebpackPlugin("dist"),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
