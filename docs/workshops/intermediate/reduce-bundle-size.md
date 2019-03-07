@@ -79,7 +79,7 @@ We are importing all bulma code, let's try to reduce bundle size by importing on
 Create a file `app.sass` and only load bulma parts.
 
 ```sass
-@charset "utf-8";
+@charset "utf-8"
 
 @import "~bulma/sass/utilities/_all.sass"
 @import "~bulma/sass/base/_all.sass"

@@ -43,6 +43,7 @@ module.exports = {
           "/workshops/intermediate/babel",
           "/workshops/intermediate/style",
           "/workshops/intermediate/reduce-bundle-size",
+          "/workshops/intermediate/modern-build",
           "/workshops/intermediate/intermediate-koans"
         ]
       }
