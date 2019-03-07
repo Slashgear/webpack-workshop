@@ -25,8 +25,8 @@ export default {
       banner
     };
   },
-  created() {
-    getPokemon(this.$route.params.id).then(pokemon => (this.pokemon = pokemon));
+  async created() {
+    this.pokemon = await getPokemon(this.$route.params.id);
   }
 };
 </script>

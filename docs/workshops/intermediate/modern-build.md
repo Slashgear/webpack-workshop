@@ -107,3 +107,102 @@ You should see in logs that babel did not include all the polyfills. But the siz
 :::
 
 ## Focus a new target !
+
+When you have a very large browser target (old ones and brand new ones), you _need_ to generate two targets.
+Thanks to `type="module"` feature of modern web browser, you can generate a big es5 like bundle and a brand new ES2018 one.
+
+To do so, let's try to generate a module target build with [Babel](https://babeljs.io/docs/en/babel-preset-env#targetsesmodules).
+
+<details>
+<summary>Solution</summary>
+
+```json{6-8}
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        },
+        "useBuiltIns": "usage",
+        "debug": true
+      }
+    ]
+  ],
+  "plugins": ["@babel/plugin-syntax-dynamic-import"]
+}
+```
+
+```js{5,15,53-62}
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin");
+
+module.exports = {
+  mode: "production",
+  entry: "./src/main.js", // The source module of our dependency graph
+  devServer: {
+    contentBase: "./dist"
+  },
+  output: {
+    // Configuration of what we tell webpack to generate (here, a ./dist/main.js file)
+    filename: "[name].bundle.[hash].mjs",
+    path: path.resolve(__dirname, "dist")
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
+      },
+      {
+        test: /\.jpg$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "assets",
+              publicPath: "assets"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(sass|css)$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.vue$/,
+        use: "vue-loader"
+      }
+    ]
+  },
+  plugins: [
+    new VueLoaderPlugin(),
+    new CleanWebpackPlugin("dist"),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html"
+    }),
+    new ScriptExtHtmlWebpackPlugin({
+      module: /\.mjs$/,
+      custom: [
+        {
+          test: /\.js$/,
+          attribute: "nomodule",
+          value: ""
+        }
+      ]
+    })
+  ]
+};
+```
+
+</details>
+
+::: tip
+We will see in other steps how to use more than one webpack configuration in the same project with webpack.
+:::

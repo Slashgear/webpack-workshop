@@ -25,8 +25,8 @@ export default {
       pokemons: []
     };
   },
-  created() {
-    getPokemons().then(pokemons => (this.pokemons = pokemons));
+  async created() {
+    this.pokemons = await getPokemons();
   }
 };
 </script>
