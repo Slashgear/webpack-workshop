@@ -44,6 +44,7 @@ module.exports = {
           "/workshops/intermediate/style",
           "/workshops/intermediate/reduce-bundle-size",
           "/workshops/intermediate/modern-build",
+          "/workshops/intermediate/compression",
           "/workshops/intermediate/intermediate-koans"
         ]
       }
