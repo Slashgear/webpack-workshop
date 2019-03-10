@@ -2,7 +2,15 @@ module.exports = {
   title: "Webpack Workshop",
   description: "Webpack discovering and mastering workshops",
   base: "/webpack-workshop/",
-  serviceWorker: true,
+  plugins: {
+    "@vuepress/pwa": {
+      serviceWorker: true,
+      updatePopup: {
+        message: "New content is available.",
+        buttonText: "Refresh"
+      }
+    }
+  },
   themeConfig: {
     lastUpdated: "Last Updated",
     repo: "Slashgear/webpack-workshop",
@@ -14,9 +22,6 @@ module.exports = {
     algolia: {
       apiKey: "5f0c4bd6212a8fc141c63283636d5228",
       indexName: "webpack_workshop"
-    },
-    serviceWorker: {
-      updatePopup: true
     },
     nav: [
       { text: "Home", link: "/" },
