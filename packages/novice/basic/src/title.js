@@ -6,6 +6,6 @@ const el = document.querySelector("h1");
 
 setInterval(() => {
   changeCount++;
-  el.innerHTML = `This title will change ! ${changeCount}`;
+  el.innerHTML = `This title will change! ${changeCount}`;
   el.style.color = getRandomColor();
 }, 1000);
