@@ -70,7 +70,7 @@ module.exports = {
 ## Generating your index file
 
 If you find out the little trick to let webpack generate the two bundles.
-You can still open your app and it'is perfectly working.
+You can still open your app and it's perfectly working.
 
 That's nice ! :clap:
 
