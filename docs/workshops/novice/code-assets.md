@@ -5,7 +5,7 @@
 
 ## Introduction
 
-A web application is not only JS and HTML, you need CSS to pump it!
+A web application is not only JS and HTML, you need CSS to pimp it!
 In this workshop we will try to load `style` in our application.
 
 ```
