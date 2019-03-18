@@ -26,7 +26,7 @@ With the help of `yarn` workspaces feature, all dependencies for all exercises w
 Clone the repository:
 
 ```bash
-git clone git@github.com:Slashgear/webpack-workshop.git
+git clone http://github.com/Slashgear/webpack-workshop.git
 ```
 
 Just run:
