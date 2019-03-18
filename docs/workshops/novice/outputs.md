@@ -76,7 +76,7 @@ That's nice ! :clap:
 
 You can also notice that only the matching dependency tree is in each bundle.
 
-But there is a issue, your browser is only getting the main bundle.
+But there is an issue, your browser is only getting the main bundle.
 You could add manually the bundle in your index.html file.
 However it will be painful to do it each time you wanted to add another bundle or just when you rename it.
 
