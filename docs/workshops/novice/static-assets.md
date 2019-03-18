@@ -60,7 +60,7 @@ It simply means that webpack failed to load your image file.
 By default, Webpack could only handle JS module files.
 If you want to load another file type, you definitely need a Webpack **Loader**.
 
-If you look at the `package.json` file, you will fine a new dependency: `file-loader`.
+If you look at the `package.json` file, you will find a new dependency: `file-loader`.
 This loader have been created for those king of need.
 
 ## Setup file loader
@@ -69,7 +69,7 @@ In [basic](./basics.md) example we saw two webpack configuration objects:
 
 - entry
 - output
-
+x
 Now we need the `module` to configure other kind of modules resolving/compiling rules.
 Let's try to add a rule for `.jpg` files.
 
