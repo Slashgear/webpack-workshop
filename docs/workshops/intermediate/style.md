@@ -16,7 +16,7 @@ We are using [Bulma](https://bulma.io/) css library here.
 ## Sass loader to take only the CSS we need from Bulma
 
 Try to load the scss file of Bulma first and edit your configuration to include the sass loader.
-The needed file is `bulma/bulma.scss`.
+The needed file is `bulma/bulma.sass`.
 
 <details>
 <summary>Solution</summary>
