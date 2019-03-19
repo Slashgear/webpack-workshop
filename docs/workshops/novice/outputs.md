@@ -3,7 +3,7 @@
 > To start this exercise, be sure to be in `./packages/novice/outputs` folder.
 > Be sure you have [installed this repository first](../README.md#install)
 
-Your app will normally, more dans more code.
+Your app will normally have more and more code.
 In order to limit your bundle size, you will try to split it in separated files.
 
 ## Adding entries
