@@ -9,7 +9,6 @@ This project is open-sourced. If you find typos or if you want to contribute, fe
 
 ## Requirements
 
-- You have to know how to use `git`, each topic is on a different branch.
 - Install NodeJS `> 10.0.0`
 - Install Yarn
 - Have an up to date browser, like Firefox or Chrome.
