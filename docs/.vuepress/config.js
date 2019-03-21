@@ -85,7 +85,14 @@ module.exports = {
         docsDir: "docs",
         editLinks: true,
         nav: [{ text: "Ateliers", link: "/fr/workshops/" }],
-        sidebar: ["/fr/workshops/"]
+        sidebar: [
+          "/fr/workshops/",
+          {
+            title: "Novice",
+            collapsable: false,
+            children: ["/fr/workshops/novice/basics"]
+          }
+        ]
       }
     }
   }
