@@ -27,6 +27,7 @@
     "vuepress": "^1.0.0-alpha.42"
   },
   "resolutions": {
-    "vue": "2.6.8"
+    "vue": "2.6.10",
+    "lodash": "4.17.15"
   }
 }
