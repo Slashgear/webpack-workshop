@@ -10,12 +10,8 @@ This project is open-sourced. If you find typos or if you want to contribute, fe
 ## Requirements
 
 - Install NodeJS `> 10.0.0`
-- Install Yarn
+- [Install Yarn](https://yarnpkg.com/en/docs/install)
 - Have an up to date browser, like Firefox or Chrome.
-
-```bash
-npm i -g yarn
-```
 
 ## Install
 
