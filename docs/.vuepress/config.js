@@ -1,5 +1,4 @@
 module.exports = {
-  base: "/webpack-workshop/",
   plugins: {
     "@vuepress/pwa": {
       serviceWorker: true,
