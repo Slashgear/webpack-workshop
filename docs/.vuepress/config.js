@@ -11,13 +11,13 @@ module.exports = {
   locales: {
     "/": {
       lang: "en-US", // this will be set as the lang attribute on <html>
-      title: "Webpack Workshop",
-      description: "Webpack discovering and mastering workshops"
+      title: "webpack Workshop",
+      description: "webpack discovering and mastering workshops"
     },
     "/fr/": {
       lang: "fr-FR",
-      title: "Ateliers Webpack",
-      description: "Ateliers pour découvrir et maîtriser Webpack"
+      title: "Ateliers autour de webpack",
+      description: "Ateliers pour découvrir et maîtriser webpack"
     }
   },
   themeConfig: {

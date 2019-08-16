@@ -1,6 +1,6 @@
 # Pour commencer
 
-Ce dépôt contient une liste d'ateliers sur Webpack afin d'apprendre des concepts, l'API et les bonnes pratiques.
+Ce dépôt contient une liste d'ateliers sur webpack afin d'apprendre des concepts, l'API et les bonnes pratiques.
 L'objectif de ce dépôt est de rassembler des ateliers à destination des novices ou des expérimentés.
 
 ::: tip
@@ -40,4 +40,4 @@ Tout dépend de vos compétences avec `webpack`.
 
 Si pour vous webpack est très nouveau, vous devriez commencer par [l'étape pour les débutants :baby:](novice/basics.md)
 
-Si vous pensez maîtriser les concepts de base de Webpack, vous pouvez commencer directement pas [l'étape pour les confirmés](intermediate/dev.md).
+Si vous pensez maîtriser les concepts de base de webpack, vous pouvez commencer directement pas [l'étape pour les confirmés](intermediate/dev.md).

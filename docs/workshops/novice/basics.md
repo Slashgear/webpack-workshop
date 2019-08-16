@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This first example is here to help you why Webpack exists and its basic usage.
+This first example is here to help you why webpack exists and its basic usage.
 
 In this app, we define two CommonJS modules (commonly used [in a NodeJS env](https://nodejs.org/docs/latest/api/modules.html)).
 They are both loaded in `index.html`.
@@ -29,9 +29,9 @@ For `lodash` library we would have used a cdn to load it.
 This way works perfectly... But for a long time project, it would generate a lot of `<script/>` loading.
 Keeping the order would have been humanly difficult.
 
-## Webpack solution
+## webpack solution
 
-Webpack is a NodeJS package that generate a bundle based on module dependencies graph resolution.
+webpack is a NodeJS package that generate a bundle based on module dependencies graph resolution.
 It's very popular in the web community to generate web bundles for web applications.
 
 ### Step 1: Setup simple configuration

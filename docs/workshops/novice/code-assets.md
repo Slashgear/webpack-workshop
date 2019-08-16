@@ -92,6 +92,6 @@ body {
 ```
 
 :::tip
-Boum ! Webpack loader can add files in the dependency graph.
+Boum ! webpack loader can add files in the dependency graph.
 That's why your file is correctly resolved.
 :::

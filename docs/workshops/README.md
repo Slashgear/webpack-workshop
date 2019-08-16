@@ -1,6 +1,6 @@
 # Get started
 
-This repository contains a list of Webpack workshops to learn concepts, API and best practices.
+This repository contains a list of webpack workshops to learn concepts, API and best practices.
 Objective of this repository is to gather workshop about webpack for very novice to experimented usage of webpack.
 
 ::: tip
