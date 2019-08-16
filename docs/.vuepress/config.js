@@ -1,13 +1,4 @@
 module.exports = {
-  plugins: {
-    "@vuepress/pwa": {
-      serviceWorker: true,
-      updatePopup: {
-        message: "New content is available.",
-        buttonText: "Refresh"
-      }
-    }
-  },
   locales: {
     "/": {
       lang: "en-US", // this will be set as the lang attribute on <html>
