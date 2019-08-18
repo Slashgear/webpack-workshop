@@ -17,17 +17,9 @@
 
 ### 🏠 [Homepage](https://webpack-workshop.netlify.com/)
 
-## Install
-
-```sh
-npm install
-```
-
 ## Usage
 
-```sh
-Go to  https://webpack-workshop.netlify.com/
-```
+Just go to https://webpack-workshop.netlify.com/
 
 ## Author
 
