@@ -32,7 +32,7 @@ webpack provides several major features:
 
 How many times have you seen this message when using tools like PageSpeed, Dareboost, Speedcurve, LightHouse or others?
 
-![lighthouse results](../assets/lighthouse.png)
+![lighthouse results](./assets/lighthouse.png)
 
 The use of webpack is not limited to the JS, to a web target.
 You will be able, through the different workshops available here, to learn how to use advanced features.
