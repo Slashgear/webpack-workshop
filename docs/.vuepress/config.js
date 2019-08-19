@@ -12,17 +12,17 @@ module.exports = {
     }
   },
   themeConfig: {
+    editLinkText: "Edit cette page sur Github",
+    lastUpdated: "Mis à jour le",
+    repo: "Slashgear/webpack-workshop",
+    repoLabel: "Contribue !",
+    docsRepo: "Slashgear/webpack-workshop",
+    docsDir: "docs",
+    editLinks: true,
     locales: {
       "/": {
         selectText: "Languages",
         label: "English",
-        editLinkText: "Edit this page on GitHub",
-        lastUpdated: "Last Updated",
-        repo: "Slashgear/webpack-workshop",
-        repoLabel: "Contribute!",
-        docsRepo: "Slashgear/webpack-workshop",
-        docsDir: "docs",
-        editLinks: true,
         algolia: {
           apiKey: "5f0c4bd6212a8fc141c63283636d5228",
           indexName: "webpack_workshop"
@@ -33,6 +33,7 @@ module.exports = {
         ],
         sidebar: [
           "/workshops/",
+          "/why.md",
           {
             title: "Novice",
             collapsable: false,
@@ -67,16 +68,10 @@ module.exports = {
       "/fr/": {
         selectText: "Langues",
         label: "Français",
-        editLinkText: "Edit cette page sur Github",
-        lastUpdated: "Mis à jour le",
-        repo: "Slashgear/webpack-workshop",
-        repoLabel: "Contribue !",
-        docsRepo: "Slashgear/webpack-workshop",
-        docsDir: "docs",
-        editLinks: true,
         nav: [{ text: "Ateliers", link: "/fr/workshops/" }],
         sidebar: [
           "/fr/workshops/",
+          "/fr/why.md",
           {
             title: "Novice",
             collapsable: false,
