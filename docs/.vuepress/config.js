@@ -77,6 +77,7 @@ module.exports = {
         nav: [{ text: "Ateliers", link: "/fr/workshops/" }],
         sidebar: [
           "/fr/workshops/",
+          "/fr/why.md",
           {
             title: "Novice",
             collapsable: false,
