@@ -19,14 +19,14 @@ module.exports = {
     docsRepo: "Slashgear/webpack-workshop",
     docsDir: "docs",
     editLinks: true,
+    algolia: {
+      apiKey: "5f0c4bd6212a8fc141c63283636d5228",
+      indexName: "webpack_workshop"
+    },
     locales: {
       "/": {
         selectText: "Languages",
         label: "English",
-        algolia: {
-          apiKey: "5f0c4bd6212a8fc141c63283636d5228",
-          indexName: "webpack_workshop"
-        },
         nav: [
           { text: "Home", link: "/" },
           { text: "Workshops", link: "/workshops/" }
