@@ -75,7 +75,10 @@ module.exports = {
           {
             title: "Novice",
             collapsable: false,
-            children: ["/fr/workshops/novice/basics"]
+            children: [
+              "/fr/workshops/novice/basics",
+              "/fr/workshops/novice/static-assets"
+            ]
           }
         ]
       }

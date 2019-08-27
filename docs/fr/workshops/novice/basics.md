@@ -21,18 +21,9 @@ title.js
              <- node_modules/lodash
 ```
 
-## L'ancienne façon
-
-Si nous étions il y a plusieurs années, nous aurions du charger tous ces fichiers dans le navigateur sans utiliser la syntaxe `require` en conservant l'ordre des dépendances.
-Pour la librairie `lodash` nous aurions utilisé un `cdn` pour le charger.
-
-Ça marcherait parfaitement... Mais pour un projet plus pérenne, cela génèrerait beaucoup de balises `<script/>`.
-Conserver l'ordre des dépendances serait alors difficile.
-
 ## La solution webpack
 
 webpack est un package NodeJS qui génère un _bundle_ (concaténation de modules), basé sur la résolution d'un arbre de dépendances.
-Cette solution est très populaire dans la communauté web pour générer des applications.
 
 ### Étape 1: Mise en place d'un configuration simple
 
@@ -104,3 +95,10 @@ yarn build
 ```
 
 Regarde le _bundle_ généré et teste ton application.
+
+### Que s'est-il passé ?
+
+ici webpack, grâce à son fichier de configuration, a construit un arbre de dépendance en se basant sur l'entry `title.js`.
+Une fois cet arbre résolu, en suivant sa configuration de "sortie", il a généré un fichier `main.js` contenant l'ensemble des modules de l'arbre de dépendances sous la forme de chunks.
+
+N'hésitez pas à jeter un coup d'oeil à ce qui est contenu dans ce fichier généré.
