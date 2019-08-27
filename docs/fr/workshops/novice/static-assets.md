@@ -133,7 +133,7 @@ Nous avons dit à webpack que le chemin de sortie est le dossier `dist'. C'est e
 
 Essayons de configurer deux choses :
 
-- make webpack crée un dossier `assets' pour ce type de fichiers (_outputPath_)
+- faire que webpack crée un dossier `assets' pour ce type de fichiers (_outputPath_)
 - rendre le chemin généré à partir du module chargé correct pour le navigateur (_publicPath_)
 
 ```js{13-22}
