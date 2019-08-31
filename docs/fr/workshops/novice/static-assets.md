@@ -63,7 +63,7 @@ Ce Loader a été créé pour ce genre de besoin.
 
 ## Mettre en place le Loader
 
-Dans l'exemple[basic](./basics.md) nous avons vu deux objets de configuration webpack :
+Dans l'exemple [basic](./basics.md) nous avons vu deux objets de configuration webpack :
 
 - entry
 - output
@@ -92,8 +92,6 @@ module.exports = {
   }
 };
 ```
-
-You can also check that if you add another `.jpg` image in the folder and don't use it in your module, webpack won't load it.
 
 ## Essayons d'utiliser notre image chargée
 
@@ -125,7 +123,7 @@ setInterval(() => {
 
 `yarn build` et ouvrez votre application, vous verrez normalement que votre image est cassée.
 
-Votre navigateur ne regarde pas dans le bon répertoire.
+Votre navigateur ne regarde pas dans le bon répertoire, le chemin vers le fichier de l'image n'est pas le bon.
 
 ### Changer le chemin
 
