@@ -94,6 +94,4 @@ title.js
              <- landscape.jpg
 ```
 
-Boum ! webpack loader can add files in the dependency graph.
-That's why your file is correctly resolved.
 :::
