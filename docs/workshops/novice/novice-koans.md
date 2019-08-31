@@ -21,4 +21,4 @@ You already have all the dependencies you will need for this.
 - Your `index.html` file should be generated with webpack and bundles should be automatically added.
 - External libs should be imported by webpack and not by _CDN_.
 - All the generated files should be in the `dist` folder.
-- `<style/>` should injected in the bundle.
+- `<style/>` should be injected in the bundle.
