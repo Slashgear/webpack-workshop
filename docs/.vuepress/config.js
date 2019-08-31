@@ -77,7 +77,8 @@ module.exports = {
             collapsable: false,
             children: [
               "/fr/workshops/novice/basics",
-              "/fr/workshops/novice/static-assets"
+              "/fr/workshops/novice/static-assets",
+              "/fr/workshops/novice/code-assets"
             ]
           }
         ]
