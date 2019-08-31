@@ -14,7 +14,7 @@ An API is open to let you implement your own webpack plugin.
 In your project you may need a plugin that already have been created by the community, don't hesitate to look at [awesome-webpack](https://github.com/webpack-contrib/awesome-webpack#webpack-plugins).
 :::
 
-You should also know that more than 70% of webpack core code is using it's own plugin API. Webpack code is a great example of _how to write a plugin ?_
+You should also know that more than 70% of webpack core code is using it's own plugin API. webpack code is a great example of _how to write a plugin ?_
 
 ## Hooks and tapable
 

@@ -57,11 +57,11 @@ You may need an appropriate loader to handle this file type.
 ```
 
 It simply means that webpack failed to load your image file.
-By default, Webpack could only handle JS module files.
-If you want to load another file type, you definitely need a Webpack **Loader**.
+By default, webpack could only handle JS module files.
+If you want to load another file type, you definitely need a webpack **Loader**.
 
-If you look at the `package.json` file, you will fine a new dependency: `file-loader`.
-This loader have been created for those king of need.
+If you look at the `package.json` file, you will find a new dependency: `file-loader`.
+This loader have been created for those kinds of need.
 
 ## Setup file loader
 
@@ -104,7 +104,7 @@ You can also check that if you add another `.jpg` image in the folder and don't 
 
 ## Let's use our loaded image
 
-Webpack seems to have now the power to load a `.jpg` file. Let's look at what it puts in the `const image` we created above.
+webpack seems to have now the power to load a `.jpg` file. Let's look at what it puts in the `const image` we created above.
 
 Normally you will see a `<strange-generated-hash>.jpg` in your console. This message matches the file webpack created in the `dist` folder.
 

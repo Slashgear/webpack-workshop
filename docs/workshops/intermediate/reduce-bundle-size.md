@@ -31,7 +31,7 @@ yarn start
 
 ::: tip
 When you start your server, you will notice webpack warnings in the console.
-Webpack is trying to tell you that your app bundle is too fat.
+webpack is trying to tell you that your app bundle is too fat.
 
 Let's try to fix that ! :wink:
 :::
@@ -40,7 +40,7 @@ Let's try to fix that ! :wink:
 
 First thing, let's try to focus on what is in our bundle and you will see it is too fat.
 
-We will use [Webpack Bundle Analyser](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+We will use [webpack Bundle Analyser](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 
 <details>
 <summary>Solution</summary>
@@ -112,7 +112,7 @@ Let's try to load only home page code on home page ! :smile:
 
 To do so we will need to generate two bundles: one for home, and one for details page.
 
-We could do that by adding another entry in Webpack configuration **OR** we could use webpack dynamic imports.
+We could do that by adding another entry in webpack configuration **OR** we could use webpack dynamic imports.
 
 VueJS is ok by default with async component :tada: , let's try to import our page in router with dynamic import.
 

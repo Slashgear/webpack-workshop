@@ -12,11 +12,11 @@ That's why you don't want to lose time doing repetitive actions to see the resul
 You change your code => you build your code with webpack => your reload your browser
 ```
 
-Webpack introduce also the concept of `bundle`.
+webpack introduce also the concept of `bundle`.
 That means the code your browser runs is not exactly the same than the code you write.
 All dependencies have been resolved and merged together.
 
-For this two painful new problems, Webpack offers solutions.
+For this two painful new problems, webpack offers solutions.
 
 ## Source maps
 
@@ -156,7 +156,7 @@ The most _naive_ approach to auto trigger build your app on code change could be
 
 </details>
 
-## Webpack Dev. Server
+## webpack Dev. Server
 
 > "Is there a solution to start an http server to serve my generated file ?" - You
 

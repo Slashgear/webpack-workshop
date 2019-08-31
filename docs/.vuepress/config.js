@@ -1,63 +1,84 @@
 module.exports = {
-  title: "Webpack Workshop",
-  description: "Webpack discovering and mastering workshops",
-  base: "/webpack-workshop/",
-  plugins: {
-    "@vuepress/pwa": {
-      serviceWorker: true,
-      updatePopup: {
-        message: "New content is available.",
-        buttonText: "Refresh"
-      }
+  locales: {
+    "/": {
+      lang: "en-US", // this will be set as the lang attribute on <html>
+      title: "webpack Workshop",
+      description: "webpack discovering and mastering workshops"
+    },
+    "/fr/": {
+      lang: "fr-FR",
+      title: "Ateliers autour de webpack",
+      description: "Ateliers pour découvrir et maîtriser webpack"
     }
   },
   themeConfig: {
-    lastUpdated: "Last Updated",
+    editLinkText: "Edit cette page sur Github",
+    lastUpdated: "Mis à jour le",
     repo: "Slashgear/webpack-workshop",
-    repoLabel: "Contribute!",
+    repoLabel: "Contribue !",
     docsRepo: "Slashgear/webpack-workshop",
     docsDir: "docs",
     editLinks: true,
-    editLinkText: "Help us improve this page!",
     algolia: {
       apiKey: "5f0c4bd6212a8fc141c63283636d5228",
       indexName: "webpack_workshop"
     },
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Workshops", link: "/workshops/" }
-    ],
-    sidebar: [
-      "/workshops/",
-      {
-        title: "Novice",
-        collapsable: false,
-        children: [
-          "/workshops/novice/basics",
-          "/workshops/novice/static-assets",
-          "/workshops/novice/code-assets",
-          "/workshops/novice/outputs",
-          "/workshops/novice/novice-koans"
+    locales: {
+      "/": {
+        selectText: "Languages",
+        label: "English",
+        nav: [
+          { text: "Home", link: "/" },
+          { text: "Workshops", link: "/workshops/" }
+        ],
+        sidebar: [
+          "/workshops/",
+          "/why.md",
+          {
+            title: "Novice",
+            collapsable: false,
+            children: [
+              "/workshops/novice/basics",
+              "/workshops/novice/static-assets",
+              "/workshops/novice/code-assets",
+              "/workshops/novice/outputs",
+              "/workshops/novice/novice-koans"
+            ]
+          },
+          {
+            title: "Intermediate",
+            collapsable: false,
+            children: [
+              "/workshops/intermediate/dev",
+              "/workshops/intermediate/babel",
+              "/workshops/intermediate/style",
+              "/workshops/intermediate/reduce-bundle-size",
+              "/workshops/intermediate/modern-build",
+              "/workshops/intermediate/compression",
+              "/workshops/intermediate/intermediate-koans"
+            ]
+          },
+          {
+            title: "Advanced",
+            collapsable: false,
+            children: ["/workshops/advanced/plugins"]
+          }
         ]
       },
-      {
-        title: "Intermediate",
-        collapsable: false,
-        children: [
-          "/workshops/intermediate/dev",
-          "/workshops/intermediate/babel",
-          "/workshops/intermediate/style",
-          "/workshops/intermediate/reduce-bundle-size",
-          "/workshops/intermediate/modern-build",
-          "/workshops/intermediate/compression",
-          "/workshops/intermediate/intermediate-koans"
+      "/fr/": {
+        selectText: "Langues",
+        label: "Français",
+        nav: [{ text: "Ateliers", link: "/fr/workshops/" }],
+        sidebar: [
+          "/fr/workshops/",
+          "/fr/why.md",
+          {
+            title: "Novice",
+            collapsable: false,
+            children: ["/fr/workshops/novice/basics"]
+          }
         ]
-      },
-      {
-        title: "Advanced",
-        collapsable: false,
-        children: ["/workshops/advanced/plugins"]
       }
-    ]
+    }
   }
 };

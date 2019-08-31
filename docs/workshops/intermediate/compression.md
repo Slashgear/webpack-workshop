@@ -10,11 +10,11 @@ You could let your webserver compress your generated bundle _on the fly_ on each
 
 All decent web server can serve pre-compressed files if browser asked for it.
 
-Good news, Webpack has a plugin for you. :tada:
+Good news, webpack has a plugin for you. :tada:
 
 ## Add Gzip compression
 
-Look at [Webpack compression plugin](https://webpack.js.org/plugins/compression-webpack-plugin) configuration and try to add it.
+Look at [webpack compression plugin](https://webpack.js.org/plugins/compression-webpack-plugin) configuration and try to add it.
 
 <details>
 <summary>Solution</summary>
