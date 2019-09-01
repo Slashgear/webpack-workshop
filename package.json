@@ -28,5 +28,8 @@
   "resolutions": {
     "vue": "2.6.10",
     "lodash": "4.17.15"
+  },
+  "dependencies": {
+    "vuepress-plugin-sitemap": "2.1.2"
   }
 }

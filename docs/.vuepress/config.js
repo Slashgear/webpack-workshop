@@ -1,4 +1,9 @@
 module.exports = {
+  plugins: {
+    sitemap: {
+      hostname: "https://webpack-workshop.netlify.com"
+    }
+  },
   locales: {
     "/": {
       lang: "en-US", // this will be set as the lang attribute on <html>
