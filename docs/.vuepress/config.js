@@ -79,7 +79,8 @@ module.exports = {
               "/fr/workshops/novice/basics",
               "/fr/workshops/novice/static-assets",
               "/fr/workshops/novice/code-assets",
-              "fr/workshops/novice/outputs"
+              "fr/workshops/novice/outputs",
+              "fr/workshops/novice/novice-koans"
             ]
           }
         ]
