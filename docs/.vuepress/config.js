@@ -78,7 +78,8 @@ module.exports = {
             children: [
               "/fr/workshops/novice/basics",
               "/fr/workshops/novice/static-assets",
-              "/fr/workshops/novice/code-assets"
+              "/fr/workshops/novice/code-assets",
+              "fr/workshops/novice/outputs"
             ]
           }
         ]
