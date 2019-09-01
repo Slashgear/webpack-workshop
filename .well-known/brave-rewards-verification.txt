@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: webpack-workshop.netlify.com
+Token: 7627ea18c93559625a5a31e46dce12070fac5629fc3936125125342484cd6835
