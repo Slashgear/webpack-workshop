@@ -87,6 +87,11 @@ module.exports = {
               "fr/workshops/novice/outputs",
               "fr/workshops/novice/novice-koans"
             ]
+          },
+          {
+            title: "Intermediate",
+            collapsable: false,
+            children: ["fr/workshops/intermediate/dev"]
           }
         ]
       }
