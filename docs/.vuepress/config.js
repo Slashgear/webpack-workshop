@@ -91,7 +91,10 @@ module.exports = {
           {
             title: "Intermediate",
             collapsable: false,
-            children: ["fr/workshops/intermediate/dev"]
+            children: [
+              "fr/workshops/intermediate/dev",
+              "fr/workshops/intermediate/babel"
+            ]
           }
         ]
       }
