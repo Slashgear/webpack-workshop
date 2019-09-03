@@ -93,7 +93,8 @@ module.exports = {
             collapsable: false,
             children: [
               "fr/workshops/intermediate/dev",
-              "fr/workshops/intermediate/babel"
+              "fr/workshops/intermediate/babel",
+              "fr/workshops/intermediate/style"
             ]
           }
         ]
