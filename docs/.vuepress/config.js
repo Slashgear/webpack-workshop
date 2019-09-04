@@ -94,7 +94,8 @@ module.exports = {
             children: [
               "fr/workshops/intermediate/dev",
               "fr/workshops/intermediate/babel",
-              "fr/workshops/intermediate/style"
+              "fr/workshops/intermediate/style",
+              "fr/workshops/intermediate/reduce-bundle-size"
             ]
           }
         ]
