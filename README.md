@@ -17,6 +17,8 @@
 
 ### 🏠 [Homepage](https://webpack-workshop.netlify.com/)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Slashgear/webpack-workshop.svg)](https://greenkeeper.io/)
+
 ## Usage
 
 Just go to https://webpack-workshop.netlify.com/
