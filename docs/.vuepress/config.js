@@ -100,6 +100,11 @@ module.exports = {
               "fr/workshops/intermediate/compression",
               "fr/workshops/intermediate/intermediate-koans"
             ]
+          },
+          {
+            title: "Avancé",
+            collapsable: false,
+            children: ["fr/workshops/advanced/plugins"]
           }
         ]
       }
