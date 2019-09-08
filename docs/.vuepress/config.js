@@ -96,7 +96,8 @@ module.exports = {
               "fr/workshops/intermediate/babel",
               "fr/workshops/intermediate/style",
               "fr/workshops/intermediate/reduce-bundle-size",
-              "fr/workshops/intermediate/modern-build"
+              "fr/workshops/intermediate/modern-build",
+              "fr/workshops/intermediate/compression"
             ]
           }
         ]
