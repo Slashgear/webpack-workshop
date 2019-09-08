@@ -78,7 +78,7 @@ module.exports = {
           "/fr/workshops/",
           "/fr/why.md",
           {
-            title: "Novice",
+            title: "Débutant",
             collapsable: false,
             children: [
               "/fr/workshops/novice/basics",
@@ -89,7 +89,7 @@ module.exports = {
             ]
           },
           {
-            title: "Intermediate",
+            title: "Intermédiaire",
             collapsable: false,
             children: [
               "fr/workshops/intermediate/dev",
@@ -97,7 +97,8 @@ module.exports = {
               "fr/workshops/intermediate/style",
               "fr/workshops/intermediate/reduce-bundle-size",
               "fr/workshops/intermediate/modern-build",
-              "fr/workshops/intermediate/compression"
+              "fr/workshops/intermediate/compression",
+              "fr/workshops/intermediate/intermediate-koans"
             ]
           }
         ]
