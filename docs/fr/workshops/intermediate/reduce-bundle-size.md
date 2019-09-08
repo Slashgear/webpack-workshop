@@ -60,6 +60,12 @@ Normalement, vous devriez voir un unique bundle qui contient :
 - vue js
 - tout le code de votre application
 
+:::tip Autre conseil
+Vous pouvez également générer un fichier `stats.json` associé à votre build afin de l'analyser.
+
+En passant l'option `generateStatsFile: true` au _BundleAnalyzerPlugin_, vous pourrez ainsi utiliser des autres outils comme [https://webpack.github.io/](https://webpack.github.io/) pour analyser votre build.
+:::
+
 ## le "Tree shaking"
 
 Essayons d'abord de couper les branches de l'arbre des dépendances.
@@ -133,4 +139,4 @@ On pourrait peut-être nommer ces chunks pour nous aider à comprendre ce qu'on 
 ## Préchargez vos bundles !
 
 Vous pouvez aussi dire à votre navigateur, **ok vous n'avez pas besoin de ce pack pour l'instant, mais essayez de le pré-rechercher si vous avez le temps, c'est bon pour vous.**
-Ceci pourrait être fait avec un autre commentaire sur le webpack, regardez[related doc](https://webpack.js.org/guides/code-splitting/#prefetchingpreloading-modules)
+Ceci pourrait être fait avec un autre commentaire sur le webpack, regardez [doc associée](https://webpack.js.org/guides/code-splitting/#prefetchingpreloading-modules).
