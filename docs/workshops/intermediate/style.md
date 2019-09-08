@@ -90,7 +90,7 @@ Try to configure [Mini CSS Extract Plugin](https://github.com/webpack-contrib/mi
 <details>
 <summary>Solution</summary>
 
-```js{3,37-40}
+```js{3}{37-40}
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");

@@ -28,7 +28,7 @@ webpack est un package NodeJS qui génère un _bundle_ (concaténation de module
 ### Étape 1: Mise en place d'un configuration simple
 
 Pour configurer webpack, vous devez créer exporter un module dans le fichier nommé `webpack.config.js` à la racine de votre projet.
-Couplé avec un outil comme `webpack`, vous pourrez alors facilement lancer un _build_.
+Couplé avec un outil comme `webpack-cli`, vous pourrez alors facilement lancer un _build_.
 
 ```js
 const path = require("path");
@@ -79,7 +79,8 @@ Grâce à un `npm script`, vous allez définir une commande pour lancer le build
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "webpack": "^4.28.4"
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
   },
   "scripts": {
     "build": "webpack"
