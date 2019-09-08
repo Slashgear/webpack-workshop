@@ -37,7 +37,7 @@ To generate your source maps:
 - define devtools to `inline-source-map`
 
 :::tip
-You can change your webpack configuration or `webpack-cli` flags.
+You can change your webpack configuration or `webpack`.
 :::
 
 <details>
@@ -101,7 +101,6 @@ module.exports = {
   },
   "devDependencies": {
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
     "file-loader": "^3.0.1",
     "css-loader": "^2.1.0",
     "style-loader": "^0.23.1",
@@ -141,7 +140,6 @@ The most _naive_ approach to auto trigger build your app on code change could be
   },
   "devDependencies": {
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
     "file-loader": "^3.0.1",
     "css-loader": "^2.1.0",
     "style-loader": "^0.23.1",

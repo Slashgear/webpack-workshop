@@ -37,7 +37,7 @@ It's very popular in the web community to generate web bundles for web applicati
 ### Step 1: Setup simple configuration
 
 To configure webpack, you just have to create a CommonJS module with default name `webpack.config.js` at the root of your project.
-Coupled with `webpack-cli` dev dependency, you can easily trigger a webpack _build_ on this small app.
+Coupled with `webpack` dev dependency, you can easily trigger a webpack _build_ on this small app.
 This is where all the webpack configuration will be defined
 
 ```js
@@ -75,7 +75,7 @@ To do so, just change the `<script/>` tag in your `index.html` to reference the 
 </html>
 ```
 
-### Step 3: Script the build with webpack-cli
+### Step 3: Script the build with webpack
 
 As you can figure out, we will trigger the build a lot! A good practice is to add a new `build` script in `package.json` .
 
@@ -89,8 +89,7 @@ As you can figure out, we will trigger the build a lot! A good practice is to ad
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "webpack": "^4.28.4"
   },
   "scripts": {
     "build": "webpack"

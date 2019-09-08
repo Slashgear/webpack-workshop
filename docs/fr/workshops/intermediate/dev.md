@@ -28,7 +28,7 @@ Pour les générer:
 - definissez la clé `devtools: 'inline-source-map'`
 
 :::tip
-Vous pouvez également changer le mode de webpack grâce à des `flags` webpack-cli.
+Vous pouvez également changer le mode de webpack grâce à des `flags` webpack.
 :::
 
 <details>
@@ -92,7 +92,6 @@ module.exports = {
   },
   "devDependencies": {
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
     "file-loader": "^3.0.1",
     "css-loader": "^2.1.0",
     "style-loader": "^0.23.1",
@@ -134,7 +133,6 @@ Essayez de le faire :muscle:
   },
   "devDependencies": {
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
     "file-loader": "^3.0.1",
     "css-loader": "^2.1.0",
     "style-loader": "^0.23.1",
