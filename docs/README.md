@@ -12,4 +12,7 @@ features:
   - title: Open source
     details: If you think a workshop is missing, open an issue, publish a pull request !
 footer: MIT Licensed | Copyright © 2019-present Antoine Caron
+meta:
+  - name: description
+    content: Learn webpack concepts by example, How to set up webpack? How to configure webpack? Babel, Scss? From beginner workshops to advanced exercises
 ---

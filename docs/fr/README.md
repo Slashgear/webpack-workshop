@@ -12,4 +12,7 @@ features:
   - title: Libre
     details: Si vous pensez qu'il manque un atelier, ouvrez une Issue ou une Pull Request !
 footer: MIT Licensed | Copyright © 2019-present Antoine Caron
+meta:
+  - name: description
+    content: Apprendre les concepts de webpack par l'exemple, Comment mettre en place webpack ? Comment configurer webpack ? Babel, Scss ? Des ateliers pour débutants jusqu'à des exercices avancés
 ---
