@@ -20,9 +20,9 @@ Lancer l'application de cet exercice avec:
 yarn build
 ```
 
-Essayer de d'ouvrir le bundle dans les devtools de votre navigateur. Vous devriez avroi du mal à comprendre ce que fait ce javascript.
+Essayez d'ouvrir le bundle dans les devtools de votre navigateur. Vous devriez avoir du mal à comprendre ce que fait ce javascript.
 
-Pour les générer:
+Pour générer les source maps:
 
 - activez le [mode](https://webpack.js.org/concepts/mode) developpement
 - definissez la clé `devtools: 'inline-source-map'`
@@ -109,7 +109,7 @@ module.exports = {
 
 Sur Chrome, ouvrez votre panneau devtools nommé _Source_, essayez d'ouvrir le fichier `pokemon.service.js`.
 Vous devriez pouvoir lire le même fichier que vous avez écrit. :tada:
-Vous pouvez maintenant mettre **breakpoints** dans le navigateur pour vous aider à déboguer votre code.
+Vous pouvez maintenant mettre des **breakpoints** dans le navigateur pour vous aider à déboguer votre code.
 
 ## Le mode watch
 
