@@ -26,16 +26,16 @@ getPokemons().then(response => {
 Ici, l'import vers le fichier `pokemon.service` est extrêmement long et compliqué.
 Il n'est ni pratique à l'usage ni à la lecture.
 
-Parfois, le fichier est très "haut" dans l'arborescence, votre _path_ va ressemblé à `../../../../../../../../../../../`.
+Parfois, le fichier est très "haut" dans l'arborescence et votre _path_ va ressembler à `../../../../../../../../../../../`.
 
 ## La solution proposée par webpack
 
 Sur votre machine, vous auriez mis en place un lien symbolique.
 Mais utiliser des liens symbolique dans un projet géré par NPM peut créer des problèmes avec l'usage des `link`.
 
-Il est plutôt recommandé d'utilisé un `alias` de résolution.
+Il est plutôt recommandé d'utiliser un `alias` de résolution.
 
-Dans l'exemple, essayer de mettre en place un alias de résolution qui vous permettra de transformer
+Dans l'exemple, essayez de mettre en place un alias de résolution qui vous permettra de transformer
 
 ```js
 import { getPokemons } from "./my/own/strange/way/to/structrure/my/project/services/pokemon.service";
