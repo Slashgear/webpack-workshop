@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple JS file</title>
+    <meta name="description" content="Simple JS file" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="https://unpkg.com/vue-router@3.1.3/dist/vue-router.js"></script>
+    <script>
+      Vue.use(VueRouter);
+
+      function getPokemons() {
+        return fetch("https://pokeapi.co/api/v2/pokemon/").then(response =>
+          response.json()
+        );
+      }
+
+      function getPokemon(id) {
+        return fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`).then(
+          response => response.json()
+        );
+      }
+
+      function getRandomPokemon() {
+        return console.log("YEAH");
+      }
+
+      const Pokemon = Vue.component("Pokemon", {
+        template: `
+            <router-link :to="to" class="column is-2 has-text-centered">
+                <div class="card card-content">
+                    <div>
+                        <img :src="url" />
+                        <p>{{ name }}</p>
+                    </div>
+                </div>
+            </router-link>
+       `,
+        props: ["id", "name"],
+        computed: {
+          url() {
+            return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
+              this.id
+            }.png`;
+          },
+          to() {
+            return `/details/${this.id}`;
+          }
+        }
+      });
+
+      const Home = Vue.component("home", {
+        template: `
+            <main>
+                <div class="columns is-multiline">
+                    <Pokemon
+                        v-for="(pokemon, id) in pokemons.results"
+                        :key="id"
+                        :id="id + 1"
+                        :name="pokemon.name"
+                    />
+                </div>
+            </main>
+        `,
+        components: {
+          Pokemon
+        },
+        data() {
+          return {
+            pokemons: []
+          };
+        },
+        async created() {
+          this.pokemons = await getPokemons();
+        }
+      });
+
+      const Details = Vue.component("Details", {
+        template: `
+            <main class="banner">
+                <router-link to="/">Home</router-link>
+                <div class="columns is-multiline">
+                  <Pokemon :id="$route.params.id" :name="pokemon.name" />
+                </div>
+                <img :src="banner" />
+            </main>
+        `,
+        components: {
+          Pokemon
+        },
+        data() {
+          return {
+            pokemon: {},
+            banner
+          };
+        },
+        async created() {
+          this.pokemon = await getPokemon(this.$route.params.id);
+        }
+      });
+
+      const App = Vue.component("App", {
+        template: `
+            <template>
+              <div id="app">
+                <h1 class="title">Pokedex</h1>
+                <router-view />
+              </div>
+            </template>
+      `
+      });
+
+      const router = new VueRouter({
+        routes: [
+          { path: "/", component: Home },
+          {
+            path: "/details/:id",
+            component: Details,
+            props: true
+          }
+        ]
+      });
+
+      new Vue({
+        router,
+        render: h => h(App)
+      }).$mount("#app");
+    </script>
+  </body>
+</html>
