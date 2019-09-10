@@ -105,7 +105,10 @@ module.exports = {
           {
             title: "Avancé",
             collapsable: false,
-            children: ["fr/workshops/advanced/plugins"]
+            children: [
+              "fr/workshops/advanced/plugins",
+              "fr/workshops/advanced/loaders"
+            ]
           }
         ]
       }
