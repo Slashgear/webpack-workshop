@@ -11,6 +11,9 @@
   <a href="https://twitter.com/Slashgear_">
     <img alt="Twitter: Slashgear_" src="https://img.shields.io/twitter/follow/Slashgear_.svg?style=social" target="_blank" />
   </a>
+  <a href="https://greenkeeper.io/" rel="nofollow" class="rich-diff-level-one">
+    <img src="https://camo.githubusercontent.com/d48ba810778f3d7398b0f5e1e726ad6d2a368110/68747470733a2f2f6261646765732e677265656e6b65657065722e696f2f536c617368676561722f7765627061636b2d776f726b73686f702e737667" alt="Greenkeeper badge" data-canonical-src="https://badges.greenkeeper.io/Slashgear/webpack-workshop.svg" style="max-width:100%;">
+  </a>
 </p>
 
 > webpack workshops to learn concepts, API and best practices

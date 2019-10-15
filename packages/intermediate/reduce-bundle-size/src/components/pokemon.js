@@ -15,9 +15,7 @@ export default {
   props: ["id", "name"],
   computed: {
     url() {
-      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
-        this.id
-      }.png`;
+      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.id}.png`;
     },
     to() {
       return `/details/${this.id}`;
