@@ -147,7 +147,7 @@ module.exports = {
 Ici, les loaders relatifs au CSS s'appliquent dans cet order `sass-loader`, `css-loader` puis `MiniCssExtractPlugin.loader`.
 :::
 
-## Utiliser un preprocesseur CSS
+## Utiliser un postprocesseur CSS
 
 Si vous voulez cibler plusieurs navigateurs avec votre CSS, vous aurez besoin d'un post-processeur. Le plus communément utilisé est `PostCSS'.
 Essayez de changer la configuration pour utiliser postCSS loader dans votre application afin de générer un CSS compatible avec tous les navigateurs.
