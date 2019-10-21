@@ -148,7 +148,7 @@ Le plugin est déjà installé.
 <summary>Solution</summary>
 
 ```js
-new CleanWebpackPlugin(['dist']),
+new CleanWebpackPlugin(),
 ```
 
 </details>
