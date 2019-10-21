@@ -25,7 +25,7 @@ Essayez d'ouvrir le bundle dans les devtools de votre navigateur. Vous devriez a
 Pour générer les source maps:
 
 - activez le [mode](https://webpack.js.org/concepts/mode) developpement
-- definissez la clé `devtools: 'inline-source-map'`
+- definissez la clé `devtool: 'inline-source-map'`
 
 :::tip
 Vous pouvez également changer le mode de webpack grâce à des `flags` webpack-cli.
