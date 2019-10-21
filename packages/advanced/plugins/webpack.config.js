@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/main.js", // The source module of our dependency graph
@@ -38,7 +38,7 @@ module.exports = {
     }
   },
   plugins: [
-    new CleanWebpackPlugin("dist"),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     })
