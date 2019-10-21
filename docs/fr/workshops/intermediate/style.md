@@ -121,7 +121,7 @@ module.exports = {
       {
         test: /\.sass$/,
         use: [
-          { loader: `MiniCssExtractPlugin.loader` },
+          { loader: MiniCssExtractPlugin.loader },
           "css-loader",
           "sass-loader"
         ]
