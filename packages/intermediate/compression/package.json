@@ -4,7 +4,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bulma": "^0.7.2",
+    "bulma": "^0.8.0",
     "lodash": "^4.17.11",
     "vue": "2.6.10",
     "vue-router": "^3.0.2"
