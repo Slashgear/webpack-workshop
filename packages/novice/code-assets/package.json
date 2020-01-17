@@ -9,7 +9,7 @@
   "devDependencies": {
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
-    "file-loader": "^4.2.0",
+    "file-loader": "^5.0.0",
     "css-loader": "^3.2.0",
     "style-loader": "^1.0.0"
   },
