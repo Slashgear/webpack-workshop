@@ -133,7 +133,7 @@ Vous pouvez essayer de charger votre application, le navigateur ne chargera que 
 
 On pourrait peut-être nommer ces chunks pour nous aider à comprendre ce qu'on vient de découper.
 
-1. Changez le nom du fichier de sortie config en `[nom].bundle.js`.
+1. Changez le nom du fichier de sortie config en `[name].bundle.js`.
 2. Ajoutez un commentaire dans l'import dynamique pour nommer votre morceau (`import(/* webpackChunkName : "home" */ "./pages/home")`)
 
 ## Préchargez vos bundles !
