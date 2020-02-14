@@ -31,7 +31,7 @@ Let's try to load our image like it was a JS module and try to run the `yarn bui
 
 ```js{2}
 const { getRandomColor } = require("./color.js");
-const image = require("../assets/landscape.jpg");
+const image = require("../assets/landscape.jpg").default;
 
 let changeCount = 0;
 
@@ -112,7 +112,7 @@ If you use this simple trick, you can try to use your generated image in your ap
 
 ```js{10-13}
 const { getRandomColor } = require("./color.js");
-const image = require("../assets/landscape.jpg");
+const image = require("../assets/landscape.jpg").default;
 
 console.log(image);
 
