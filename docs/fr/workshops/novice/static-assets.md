@@ -56,7 +56,7 @@ Cela signifie simplement que le webpack n'a pas réussi à charger votre fichier
 Par défaut, webpack ne peut gérer que les fichiers du module JS.
 Si vous voulez charger un autre type de fichier, vous avez absolument besoin d'un webpack **Loader**.
 
-Le **Loader** est une brique optionnelle de webpack qui permet de gérer d'autres format de fichier comme des fichiers JS.
+Le **Loader** est une brique optionnelle de webpack qui permet de gérer d'autres format de fichier comme des fichiers JPG.
 
 Si vous regardez le fichier `package.json', vous trouverez une nouvelle dépendance :`file-loader'.
 Ce Loader a été créé pour ce genre de besoin.
