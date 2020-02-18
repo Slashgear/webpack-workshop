@@ -20,7 +20,7 @@ For this two painful new problems, webpack offers solutions.
 
 ## Source maps
 
-When your generated JS code is not humanly readable because it has been minified or bundle you need [source maps](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map).
+When your generated JS code is not humanly readable because it has been minified or bundled you need [source maps](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map).
 In this exercise, the app is displaying pokemons.
 
 Run:
