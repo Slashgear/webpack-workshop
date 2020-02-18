@@ -33,7 +33,7 @@ Try to open the generated bundle in the browser devtools, this should be very co
 
 To generate your source maps:
 
-- toggle development [mode](https://webpack.js.org/concepts/mode) of your build
+- toggle development [mode](https://webpack.js.org/concepts/#mode) of your build
 - define devtools to `inline-source-map`
 
 :::tip
