@@ -75,7 +75,7 @@ On peut parler ici de code splitting mais si vous observez le contenu des deux b
 
 ## Générer votre fichier index.html
 
-Actuellement, si vous regarder votre fichier `index.html`, le chargement du fichier `main.js` est géré manuellement.
+Actuellement, si vous regardez votre fichier `index.html`, le chargement du fichier `main.js` est géré manuellement.
 Si votre bundle change de nom, vous risquez de devoir aller changer votre fichier html.
 
 Essayons d'automatiser cela grâce à [HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/).
