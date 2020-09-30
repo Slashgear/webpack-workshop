@@ -1,6 +1,6 @@
-# Why learning to use Webpack?
+# Why learn Webpack?
 
-webpack is nowadays a very widespread tool in the world of web frontend development.
+webpack is nowdays a very widespread tool in the world of web frontend development.
 It is either used directly or via toolkit (Vue-CLI, Angular-CLI, CRA, etc...).
 
 Its use may seem complicated at first, but the internal magic is relatively easy to grasp.
