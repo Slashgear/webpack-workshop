@@ -12,7 +12,7 @@ meta:
 
 ## Un peu de contexte
 
-Vous le savez surement, mais webpack ne sais gérer par défaut que des module JS (Esm, ou CJS).
+Vous le savez sûrement, mais webpack ne sais gérer par défaut que des module JS (Esm, ou CJS).
 Si vous souhaitez charger d'autres formats de fichier, vous devez passer par ce qu'on appelle un loader.
 
 Il en existe déjà de nombreux, vous pouvez trouver une longue liste sur la page [Awesome de webpack](https://github.com/webpack-contrib/awesome-webpack#loaders).

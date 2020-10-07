@@ -10,7 +10,7 @@ Ce premier exemple a pour but de vous aider à comprendre pourquoi webpack exist
 Dans cette application, nous avons défini deux modules CommonJS (modules utilisés [sur NodeJS](https://nodejs.org/docs/latest/api/modules.html)).
 Ils sont tous les deux chargés dans `index.html`.
 
-Si vous n'êtes pas famillier avec les capacités des navigateurs, sachez que les modules CommonJS n'y sont pas fonctionnels.
+Si vous n'êtes pas familiés avec les capacités des navigateurs, sachez que les modules CommonJS n'y sont pas fonctionnels.
 Un navigateur ne peut pas gérer l'import direct de dépendance NodeJS.
 
 Ici le graphe de dépendance de l'application ressemble à:

@@ -8,7 +8,7 @@ Cet exercice n'est pas à faire pendant un workshop.
 Vous pouvez le faire à tête reposée, pour vérifiez que vous validez toutes les compétences d'un utilisateur intermédiaire de webpack.
 
 Vous avez ici une page web très simple où tout a été hardcodé dans l'`index.html`.
-Vous avez déjà toutes les dépendances nécessaire pour faire cette évaluation.
+Vous avez déjà toutes les dépendances nécessaires pour faire cette évaluation.
 :::
 
 ## "Definition of done"
@@ -19,6 +19,6 @@ Vous avez déjà toutes les dépendances nécessaire pour faire cette évaluatio
 - Générer votre index.html grâce à Webpack
 - Mettez en place babel pour que votre code marche sur Safari ou IE
 - Importer Bulma grâce à un `import`
-- Utiliser uniquement les parties de Bulma qui sont nécessaire pour l'affichage
+- Utiliser uniquement les parties de Bulma qui sont nécessaires pour l'affichage
 - Extraire le CSS dans des fichiers CSS
 - Découpez le code des pages de l'application pour le lazy-loader.

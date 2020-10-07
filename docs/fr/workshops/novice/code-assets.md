@@ -3,14 +3,14 @@
 > Pour démarrer cet exercice, sois sûr d'être dans le dossier `./packages/novice/code-assets`.
 > Sois également sûr d'avoir [installé ce dépôt d'abord](../README.md#install)
 
-Si vous n'êtes pas familier avec _Loaders_, vous devriez faire [static assets workshop](./static-assets.md) en premier.
+Si vous n'êtes pas familiés avec _Loaders_, vous devriez faire [static assets workshop](./static-assets.md) en premier.
 
 ## Plus de loaders !
 
 Nous avons ajouté deux loaders pour vous `css-loaders`, `style-loader` dans les dépendances.
 Une très petite feuille de style a également été définie.
 
-Essayez de définir la configuration pour charger votre style avec webpack et importez le fichier `main.css' dans le module d'entrée.
+Essayez de définir la configuration pour charger votre style avec webpack et importez le fichier `main.css` dans le module d'entrée.
 
 [Doc de CSS Loader](https://github.com/webpack-contrib/css-loader)
 

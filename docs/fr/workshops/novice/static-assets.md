@@ -25,7 +25,7 @@ Title va avoir color.js et landscape.jpg en dépendance.
 
 ## Essayons de l'importer !
 
-Essayons de charger notre image comme s'il s'agissait d'un module JS et d'exécuter la commande `yarn build'.
+Essayons de charger notre image comme s'il s'agissait d'un module JS et d'exécuter la commande `yarn build`.
 
 ```js{2}
 const { getRandomColor } = require("./color.js");
@@ -58,7 +58,7 @@ Si vous voulez charger un autre type de fichier, vous avez absolument besoin d'u
 
 Le **Loader** est une brique optionnelle de webpack qui permet de gérer d'autres format de fichier comme des fichiers JPG.
 
-Si vous regardez le fichier `package.json', vous trouverez une nouvelle dépendance :`file-loader'.
+Si vous regardez le fichier `package.json`, vous trouverez une nouvelle dépendance :`file-loader`.
 Ce Loader a été créé pour ce genre de besoin.
 
 ## Mettre en place le Loader
@@ -127,11 +127,11 @@ Votre navigateur ne regarde pas dans le bon répertoire, le chemin vers le fichi
 
 ### Changer le chemin
 
-Nous avons dit à webpack que le chemin de sortie est le dossier `dist'. C'est exactement là qu'il crée l'image chargée.
+Nous avons dit à webpack que le chemin de sortie est le dossier `dist`. C'est exactement là qu'il crée l'image chargée.
 
 Essayons de configurer deux choses :
 
-- faire que webpack crée un dossier `assets' pour ce type de fichiers (_outputPath_)
+- faire que webpack crée un dossier `assets` pour ce type de fichiers (_outputPath_)
 - rendre le chemin généré à partir du module chargé correct pour le navigateur (_publicPath_)
 
 ```js{13-22}

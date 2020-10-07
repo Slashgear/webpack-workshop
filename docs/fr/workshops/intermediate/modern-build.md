@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Essayez de démarrer cette application avec `yarn build'.
+Essayez de démarrer cette application avec `yarn build`.
 Ouvrez l'application dans votre navigateur et regardez la taille et le contenu du bundle JS.
 
 ::: tip Regarde !
@@ -119,7 +119,7 @@ Lorsque vous avez une très grande cible de navigateur (les anciennes et les tou
 
 Grâce à la fonctionnalité `type="module"` du navigateur web moderne, vous pouvez générer un gros bundle es5 et un tout nouveau paquet ES2018.
 
-Pour ce faire, essayons de générer de cibler les module de type target avec [Babel](https://babeljs.io/docs/en/babel-preset-env#targetsesmodules).
+Pour ce faire, essayons de générer des modules de type target avec [Babel](https://babeljs.io/docs/en/babel-preset-env#targetsesmodules).
 
 N'hésitez pas à utiliser [ScriptExtHtmlWebpackPlugin](https://github.com/numical/script-ext-html-webpack-plugin) qui est déjà inclu dans le projet
 
