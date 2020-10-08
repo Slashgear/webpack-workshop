@@ -54,12 +54,10 @@ class MyExampleWebpackPlugin {
 ## Créons un plugin pour mesurer le temps de build
 
 :::warning
-Ce plugin existe déjà, vous pouvez déjà avoir cette info mais c'est un prétexte.
+Ce plugin existe déjà, vous pouvez déjà avoir cette info mais c'est un prétexte pour apprendre à écrire un plugin.
 :::
 
-Pour apprendre à écrire un plugin.
-
-Essayez de définir un plugin qui prend les `stats` données pas le hook `done' et afficher le temps de build en millisecondes.
+Essayez de définir un plugin qui prend les `stats` données pas le hook `done` et afficher le temps de build en millisecondes.
 
 <details>
 <summary>Solution</summary>

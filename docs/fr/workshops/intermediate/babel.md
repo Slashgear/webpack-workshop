@@ -8,11 +8,11 @@
 > "Utiliser le Javascript de demain, aujourd'hui" - Babel
 
 ::: tip
-Si pour vous le rôle de Babel n'est pas clair, n'hésitez pas à consulter sa [documentation](https://babeljs.io/docs/en/index.html).:::
+Si pour vous le rôle de Babel n'est pas clair, n'hésitez pas à consulter sa [documentation](https://babeljs.io/docs/en/index.html).
 :::
 
 Si vous essayez de charger votre application actuelle avec un ancien navigateur qui ne supporte pas les dernières fonctionnalités d'EcmaScript.
-Tu auras des problèmes. :sob:
+Vous aurez des problèmes. :sob:
 Lorsque vous rencontrez ces problèmes, vous voulez souvent générer du javascript ES5 afin de laisser tourner votre code sur chaque navigateur.
 C'est là que Babel peut beaucoup aider.
 
@@ -28,7 +28,7 @@ L'application actuelle est très simple, votre configuration webpack fonctionne 
 Configurez _babel-loader_ pour chaque fichier `.js`.
 
 - Essayer de mettre en place le _babel-loader_ en suivant la [documentation](https://github.com/babel/babel-loader)
-- Essayer d'accèder à votre application avec un navigateur moins à jour que Firefox ou Chrome.
+- Essayer d'accéder à votre application avec un navigateur moins à jour que Firefox ou Chrome.
 
 <details>
 <summary>Solution</summary>

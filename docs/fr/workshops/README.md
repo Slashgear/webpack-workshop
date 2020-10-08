@@ -16,7 +16,7 @@ Ce projet est libre. Si vous trouvez des typos où si vous voulez contribuer, vo
 ## Installation
 
 Tous les ateliers sont listés dans le dossier `packages` groupés par difficulté.
-Grâce à la fonctionnalité des workspaces de `yarn`, toutes les dépendances pour tous les ateliers sont téléchargés d'un seul coup.
+Grâce à la fonctionnalité des workspaces de `yarn`, toutes les dépendances pour tous les ateliers sont téléchargées d'un seul coup.
 
 Clonez le dépôt:
 
@@ -36,4 +36,4 @@ Tout dépend de vos compétences avec `webpack`.
 
 Si pour vous webpack est très nouveau, vous devriez commencer par [l'étape pour les débutants :baby:](novice/basics.md)
 
-Si vous pensez maîtriser les concepts de base de webpack, vous pouvez commencer directement pas [l'étape pour les confirmés](intermediate/dev.md).
+Si vous pensez maîtriser les concepts de base de webpack, vous pouvez commencer directement par [l'étape pour les confirmés](intermediate/dev.md).
